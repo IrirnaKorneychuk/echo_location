@@ -1,0 +1,140 @@
+.container{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 10px 0;
+    background-color: #55556c;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-settings a{
+    margin-left: 10px;
+    color: #ececec;
+}
+
+.user-settings a:hover{
+    color: #c9c9c9;
+}
+
+.map {
+    width: 600px;
+    height: 400px;
+    border: 3px solid #55556c;
+}
+
+.form-width {max-width: 25rem;}
+.has-float-label {
+    position: relative; }
+.has-float-label label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: -.5em;
+    left: 0.75rem;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 1px; }
+.has-float-label label::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: white;
+    height: 2px;
+    top: 50%;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1; }
+.has-float-label .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0; }
+.has-float-label .form-control:placeholder-shown:not(:focus) + label {
+    font-size: 150%;
+    opacity: .5;
+    top: .3em; }
+
+.input-group .has-float-label {
+    display: table-cell; }
+.input-group .has-float-label .form-control {
+    border-radius: 0.25rem; }
+.input-group .has-float-label:not(:last-child) .form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+.input-group .has-float-label:not(:first-child) .form-control {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px; }
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+h1 {
+    line-height: 1em;
+}
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+}
+table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.fileupload-progress {
+    margin: 10px 0;
+}
+.fileupload-progress .progress-extended {
+    margin-top: 5px;
+}
+.error {
+    color: red;
+}
+
+@media (min-width: 481px) {
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li {
+        display: inline-block;
+    }
+    .navigation li:not(:first-child):before {
+        content: "| ";
+    }
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+}
