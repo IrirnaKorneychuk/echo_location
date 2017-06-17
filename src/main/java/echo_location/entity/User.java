@@ -4,15 +4,17 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Document
 public class User implements Serializable{
     @Id
     private String id;
-    private String login;
+    private String email;
     private String password;
     private String firstName;
     private String lastName;
+    private List<Role> roles;
 
     public User(){
 
@@ -22,16 +24,24 @@ public class User implements Serializable{
         return id;
     }
 
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getEmail() {
+        return email;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

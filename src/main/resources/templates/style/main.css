@@ -1,0 +1,36 @@
+.container{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 10px 0;
+    background-color: #55556c;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background: url("../img/isolines.png");
+    width: 118px;
+    height: 29px;
+}
+
+.user-settings a{
+    margin-left: 10px;
+    color: #ececec;
+}
+
+.user-settings a:hover{
+    color: #c9c9c9;
+}
